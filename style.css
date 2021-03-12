@@ -2,7 +2,7 @@ body{
     background-color: #eff3f2;
     background: url('c1.jpg') no-repeat fixed 100% 100%;    background-size: 100% 100%;
     background-repeat: no-repeat;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 50px;
@@ -23,7 +23,7 @@ h1{
 #button{
     height: 34px;
     border-radius: 5px;
-    width: 160px;
+    width: 190px;
     color: oldlace;
     background-color: navy;
     border: none;
@@ -33,4 +33,14 @@ h1{
     float: right;
     padding-right: 50px;
     padding-top: 100px;
+  
+}
+#inputText{
+    height: 35px;
+    width: 190px;
+}
+.inpDisp{
+float: left;
+padding-left: 50px;
+padding-top: 100px;
 }
