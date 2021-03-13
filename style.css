@@ -22,21 +22,21 @@ h1{
 }
 #Report{
     background-color: rgb(181, 212, 212);
-    height: 200px;
+    height: 250px;
     width: 100%;
+    overflow: auto;
+    opacity: 0.5;
 }
 #section{
     background-color: rgb(219, 239, 248);
     box-sizing: border-box;
     padding: 60px;
-    
 }
-
 @media only screen and (max-width:600px){
     .btns{
         float: none; 
     }
-}
+} 
 .btns{
     padding: 50px;
     padding-top: 0px;
