@@ -19,3 +19,11 @@ function display_sheds(){
         }
         document.getElementById("Report").innerHTML = shed;
 }
+//add more sheds
+function add_sheds(){
+    var newObject = {};
+    newObject.shedName = document.getElementById("inputText").value;
+    sheds.push(newObject);
+    alert(newObject.shedName+ " added successfully");
+    document.getElementById("inputText").value= ' ';
+}
