@@ -52,8 +52,9 @@ h1{
 #inputText{
     height: 35px;
     border-radius: 4px;
-    width: 200px;
+    width: 300px;
     border: none;
+    padding: 5px;
 }
 #button{
     height: 35px;
