@@ -26,6 +26,7 @@ function add_sheds(){
     sheds.push(newObject);
     alert(newObject.shedName+ " added successfully");
     document.getElementById("inputText").value= ' ';
+<<<<<<< HEAD
 }
 //total production
 var milkPerShed = 0;
@@ -69,4 +70,6 @@ function totalProduction(){
               incomeOverTime(price, period);
 
               incomePerMonth();
+=======
+>>>>>>> ed671437f446f8e5b14d38cb78863359c295698f
 }
