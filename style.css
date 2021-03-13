@@ -26,6 +26,7 @@ h1{
     width: 100%;
     overflow: auto;
     opacity: 0.5;
+    padding: 10px;
 }
 #section{
     background-color: rgb(219, 239, 248);

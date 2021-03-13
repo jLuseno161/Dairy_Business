@@ -9,3 +9,13 @@ var sheds  = [
     {   shedName :'Shed D',
     }
 ];
+//view available sheds
+function display_sheds(){
+    var shed =" ";
+
+        for(i = 0; i< sheds.length; i++)
+        {
+            shed += sheds[i].shedName +"<br>";
+        }
+        document.getElementById("Report").innerHTML = shed;
+}
