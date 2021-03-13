@@ -68,3 +68,13 @@ function totalProduction(){
 
               incomePerMonth();
 }
+//income per*
+var selling_price = 45;
+var income = 0;
+var time  = [
+    {   name : 'Weekly',
+        days :7,
+    },
+    {   name : 'Yearly',
+        days :365,
+    }];
