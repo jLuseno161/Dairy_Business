@@ -49,6 +49,7 @@ function totalProduction(){
                     break; 
                   }
                 else { 
+                    
                     //create new object for milkpershed
                     obj = {};
                     sheds.map(function(obj){
