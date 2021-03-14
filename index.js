@@ -9,6 +9,7 @@ var sheds  = [
     {   shedName :'Shed D',
     }
 ];
+
 //view available sheds
 function display_sheds(){
     var shed =" ";
@@ -19,6 +20,7 @@ function display_sheds(){
         }
         document.getElementById("Report").innerHTML = shed;
 }
+
 //add more sheds
 function add_sheds(){
     var newObject = {};
@@ -27,6 +29,7 @@ function add_sheds(){
     alert(newObject.shedName+ " added successfully");
     document.getElementById("inputText").value= ' ';
 }
+
 //total production
 var milkPerShed = 0;
 var total = 0;
@@ -56,20 +59,20 @@ function totalProduction(){
                     obj.milkPerShed = ltrspershed;
                     return obj;
                     });
-                }
+                  }
                 
                document.getElementById("Report").innerHTML += "Your production in " + sheds[i].shedName + " is " + sheds[i].milkPerShed + " litres per day."+ "<br>" +"<br>";
                milkPerShed += parseFloat(sheds[i].milkPerShed);            
               }
           i++;
         }
-              total = milkPerShed;
-              document.getElementById("Report").innerHTML += "The total production is " +  total + " litres per day" + "<br>" +"<br>" ; 
+      total = milkPerShed;
+      document.getElementById("Report").innerHTML += "The total production is " +  total + " litres per day" + "<br>" +"<br>" ; 
 
-              incomeOverTime(price, period);
+      incomeOverTime(price, period);
+      incomePerMonth();
+}
 
-              incomePerMonth();
-  }
 //income per*
 var selling_price = 45;
 var income = 0;
@@ -79,7 +82,8 @@ var time  = [
     },
     {   name : 'Yearly',
         days :365,
-    }];
+    }
+  ];
 function incomeOverTime(price, period){
     document.getElementById("Report").innerHTML = ' ';
     for(var j in sheds){
@@ -100,9 +104,10 @@ function incomePerMonth(){
   for(var[month,count] of months){
       income = count * total * selling_price;
       document.getElementById("Report").innerHTML += "Your income for " + month + " is Ksh. " + income +"<br>"+"<br>";
-  }
+    }
 } 
 
+//reset page
 function reset() {
   location.reload();
 }
