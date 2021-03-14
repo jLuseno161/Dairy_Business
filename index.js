@@ -1,4 +1,4 @@
-//array for storing milk and shade data
+//array for storing milk and shed data
 var sheds  = [
     {   shedName :'Shed A',
     },
@@ -47,8 +47,7 @@ function totalProduction(){
     document.getElementById("Report").innerHTML =' '; 
       var i = 0;
         while (i < sheds.length) {
-          //text += "<br>The number is " + i;
-          var ltrspershed = prompt("Please Litres of milk from:" +sheds[i].shedName, "");
+          var ltrspershed = prompt("Enter Litres of milk from " +sheds[i].shedName, "");
             if(ltrspershed == null){
                 alert("You Pressed Cancel."); 
                 break; 
