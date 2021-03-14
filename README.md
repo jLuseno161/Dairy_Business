@@ -1,4 +1,4 @@
-# # DAIRY BUSINESS
+# DAIRY BUSINESS
 
 ## Author
 Joy L. Kolia
