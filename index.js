@@ -94,14 +94,12 @@ var time  = [
     }
   ];
 function incomeOverTime(price, period){
-  
     document.getElementById("Report").innerHTML = ' ';
     for(var j in sheds){
         income = period[j].days * total * price;
         document.getElementById("Report").innerHTML +=  "Your " + period[j].name +" income will be Ksh. "+ income +"<br>"+"<br>"; 
     }  
 };
-
 //monthly income
 function incomePerMonth(){ 
   document.getElementById("Report").innerHTML =' '; 
