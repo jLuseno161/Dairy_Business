@@ -23,20 +23,20 @@ function display_sheds(){
 
 //add more sheds
 function add_sheds(){
-  var input = document.getElementById("inputText").value;
-  if (input == ""){
-    alert("Please enter name of shed"); 
-    return false;
-  }
-  else 
-  {
-    var newObject = {};
-    newObject.shedName = document.getElementById("inputText").value;
-    sheds.push(newObject);
-    alert(newObject.shedName+ " added successfully");
-    document.getElementById("inputText").value= ' ';
-    return true; 
-  }
+    var input = document.getElementById("inputText").value;
+    if (input == ""){
+      alert("Please enter name of shed"); 
+      return false;
+    }
+    else 
+    {
+      var newObject = {};
+      newObject.shedName = document.getElementById("inputText").value;
+      sheds.push(newObject);
+      alert(newObject.shedName+ " added successfully");
+      document.getElementById("inputText").value= ' ';
+      return true; 
+    }
 }
 
 //total production
@@ -94,6 +94,7 @@ var time  = [
     }
   ];
 function incomeOverTime(price, period){
+  
     document.getElementById("Report").innerHTML = ' ';
     for(var j in sheds){
         income = period[j].days * total * price;
