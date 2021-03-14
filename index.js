@@ -102,3 +102,7 @@ function incomePerMonth(){
       document.getElementById("Report").innerHTML += "Your income for " + month + " is Ksh. " + income +"<br>"+"<br>";
   }
 } 
+
+function reset() {
+  location.reload();
+}
