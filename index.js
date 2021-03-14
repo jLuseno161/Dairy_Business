@@ -26,7 +26,6 @@ function add_sheds(){
     sheds.push(newObject);
     alert(newObject.shedName+ " added successfully");
     document.getElementById("inputText").value= ' ';
-<<<<<<< HEAD
 }
 //total production
 var milkPerShed = 0;
@@ -70,6 +69,21 @@ function totalProduction(){
               incomeOverTime(price, period);
 
               incomePerMonth();
-=======
->>>>>>> ed671437f446f8e5b14d38cb78863359c295698f
-}
+  }
+//income per*
+var selling_price = 45;
+var income = 0;
+var time  = [
+    {   name : 'Weekly',
+        days :7,
+    },
+    {   name : 'Yearly',
+        days :365,
+    }];
+function incomeOverTime(price, period){
+    document.getElementById("Report").innerHTML = ' ';
+    for(var j in sheds){
+        income = period[j].days * total * price;
+        document.getElementById("Report").innerHTML +=  "Your " + period[j].name +" income will be Ksh. "+ income +"<br>"+"<br>"; 
+    }  
+};
