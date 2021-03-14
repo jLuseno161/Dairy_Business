@@ -93,3 +93,7 @@ var month = {
   August:31,September:30,October:31, November:30, December:31
 };
 var months = Object.entries(month);
+for(var[month,count] of months){
+  income = count * total * selling_price;
+  document.getElementById("Report").innerHTML += "Your income for " + month + " is Ksh. " + income +"<br>"+"<br>";
+}
